@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroundmain2"
+    android:orientation="vertical" >
+
+    <!-- <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="70.0dip" android:src="@drawable/cooltext969147648" android:layout_above="@id/Button01" android:layout_centerHorizontal="true" /> -->
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector"
+        android:gravity="left"
+        android:onClick="startGame"
+        android:paddingBottom="10.0dip"
+        android:text=" "
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/selector"
+        android:gravity="left"
+        android:onClick="DiscoverDevice"
+        android:paddingBottom="10.0dip"
+        android:text="Discover Devices"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@+id/Button03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/selector"
+        android:gravity="left"
+        android:onClick="MakeDiscoverable"
+        android:paddingBottom="10.0dip"
+        android:text="Discoverable"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@+id/Button04"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/selector"
+        android:gravity="left"
+        android:onClick="options"
+        android:paddingBottom="10.0dip"
+        android:text="Options"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="274dp"
+        android:layout_height="21dp"
+        android:layout_weight="0.12"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/Button05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/selector"
+        android:gravity="left"
+        android:onClick="exit"
+        android:paddingBottom="10.0dip"
+        android:text="Exit"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp" />
+
+</LinearLayout>

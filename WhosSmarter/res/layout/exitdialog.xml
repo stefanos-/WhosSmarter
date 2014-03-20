@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bgdialog"
+    android:orientation="vertical"
+    android:padding="40dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Exit Who&apos;s Smarter?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/cancel"
+        android:layout_below="@+id/textView1"
+        android:background="#000000"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/cancel"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/exit"
+        android:layout_alignBottom="@+id/exit"
+        android:layout_alignRight="@+id/textView1"
+        android:background="@drawable/dialogselector"
+        android:text="cancel"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/exit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/dialogselector"
+        android:text="exit"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backgroundsecondactivity" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@drawable/text_backg"
+                android:gravity="center"
+                android:maxLength="8"
+                android:text="Player 1"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="#E6E6E6"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/QuestTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140.0dip"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text=""
+            android:textColor="#ffff0000"
+            android:textSize="20.0sp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout1"
+            android:progressDrawable="@drawable/progressbar2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/QuestTV"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="-20dp"
+            android:gravity="center"
+            android:textColor="#ffff0000"
+            android:textSize="58.0sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="45dp"
+            android:textSize="23dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/button1"
+            android:textSize="23dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/button1"
+            android:textSize="23dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="23dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="0"
+            android:textSize="22dp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

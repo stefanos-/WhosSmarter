@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0" package="com.example.whossmarter"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <application android:theme="@android:style/Theme" 
+        android:label="@string/app_name" 
+        android:icon="@drawable/ic_launcher" 
+        android:screenOrientation="portrait">
+        <activity android:theme="@*android:style/Theme" 
+            android:label="@string/app_name" 
+            android:name=".SplashScreen" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity  android:theme="@*android:style/Theme" 
+            android:label="@string/app_name"
+            android:name=".MainActivity" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize">
+             <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<!-- "data" entry shown later; not used in this example -->
+			</intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" 
+            android:name=".finalScore"
+            android:screenOrientation="portrait" />
+        <activity android:label="@string/app_name" 
+            android:name=".finalScoreTwoPlayers"
+            android:screenOrientation="portrait" />
+        <activity  android:theme="@*android:style/Theme" 
+            android:label="@string/app_name"
+            android:name=".SecondGameActivityOnePlayer" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize">
+             <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<!-- "data" entry shown later; not used in this example -->
+			</intent-filter>
+        </activity>
+        <activity  android:theme="@*android:style/Theme" 
+            android:label="@string/app_name"
+            android:name=".SecondGameActivity" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize">
+             <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<!-- "data" entry shown later; not used in this example -->
+			</intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" 
+            android:name=".Questions" 
+            android:screenOrientation="portrait"/>
+    </application>
+</manifest>
